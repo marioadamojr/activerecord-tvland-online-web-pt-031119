@@ -9,4 +9,7 @@ class Actor < ActiveRecord::Base
   def list_roles
     self.characters.all
   end
+
+  def say_that_thing_you_say
+    "#{self.name} always says #{self.catchphrase}"
 end
